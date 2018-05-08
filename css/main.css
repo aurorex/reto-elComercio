@@ -1,0 +1,169 @@
+/* estilos para el header */
+header{
+  height: 100px;
+  background-color: rgb(243, 180, 6);
+}
+
+header figure{
+  position: absolute;
+  float: left;
+}
+
+header img{
+  margin: 20px 0;
+  width: 200px;
+  height: 60px;
+}
+
+.title{
+  text-align: center;
+}
+
+header h1{
+  font-size: 40px;
+  line-height: 100px;
+  display: inline;
+  text-align: center; 
+}
+
+/* estilos para la sección del nav */
+nav{
+  background: black;
+  height:50px ;
+}
+
+nav ul{
+  list-style:none;
+  float: right;
+}
+
+nav ul li{
+  text-align: center;
+  display: inline;
+  line-height: 50px; 
+  padding: 16px 10px; 
+}
+
+nav ul li:hover{
+  background-color: rgb(255, 242, 64);
+  color:black;
+  padding: 16px 10px;
+}
+
+nav li a{
+  color: rgb(255, 242, 64);
+  text-decoration: none;
+  padding: 16px 10px;
+}
+
+nav li a:hover{
+  color:black;
+  padding: 16px 10px;
+}
+
+/* estilos para el la sección del main */
+section {
+  margin: 50px 0;
+  height: 100vh;
+}
+
+#reto-1 h2, #reto-2 h2{
+  color: rgb(88, 88, 86);
+  margin: 20px 0;
+}
+
+.container-demo{
+  background-color: rgb(245, 244, 235);
+  border-radius: 5px;
+  margin: 0 200px;
+  padding: 20px 0;
+}
+
+.container-ejm p{
+  margin: 10px 0 0 0;
+}
+
+.container-ejm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.code-ejm {
+  text-align: center;
+  background-color: rgb(46, 45, 45);
+  width: 600px;
+  border-radius:5px;
+  height:50px;
+  line-height: 50px;
+  color: cornsilk;
+}
+
+.code-ejm span{
+  color: rgb(248, 8, 68);
+}
+
+.span1 em{
+  color: teal;
+}
+
+.container-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-button button{
+  background: transparent;
+  outline: none;
+  border:1px solid rgb(255, 174, 0);
+  background-color: rgb(253, 209, 10);
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.container-result{
+  border: 2px solid rgb(255, 174, 0);
+  height: 30px;
+  margin: 30px;
+  padding: 0 10px;
+  text-align: center;
+  line-height: 30px;
+  color: rgb(255, 174, 0);
+  font-weight: bold;
+}
+
+.container-button button:hover{
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}
+
+/* estilos para el footer */
+footer{
+  background-color: black;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  line-height: 70px;
+}
+
+footer a{
+  position: relative;
+  float: right;
+  color: white;
+  font-size: 20px;
+  line-height: 70px;
+}
+
+footer a:hover{
+  color: rgb(255, 174, 0);
+}

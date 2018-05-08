@@ -5,28 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>RETO EL COMERCIO</title>
+  <link rel="stylesheet" href="css/main-sin-gutter.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header>
-
+  <!-- estructura del header -->
+  <header id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <figure>
+            <img src="assets/images/logo-comercio.jpg" alt="logo-elcomercio">
+          </figure>
+          <div class="title">
+            <h1>Pruebas de Lógica</h1>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
-
+  <!-- estructura para la navegación -->
+  <nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li><a href="#reto-1">RETO 1</a></li>
+            <li><a href="#reto-2">RETO 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
   <main>
-    <button id="button-capital-letter" type="reset">PALABRA MÁS LARGA</button>
-    <button id="button-ascending-order" type="reset">ORDEN ASCENDENTE</button>
-    
-    <button id="button-higher">MAYOR NÚMERO</button>
-    <button id="button-less">MENOR NÚMERO</button>
-    <button id="button-second-higher">SEGUNDO NÚMERO MAYOR</button>
+    <section id="reto-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ">
+            <h2>Reto 1: manipulando elementos de un Array de Números.</h2>
+            <br>
+            <div class="container-demo">
+              <div class="container-ejm">
+                <p>Dado el siguiente arreglo de números enteros:</p>
+                <p class="code-ejm"><span class="span1"><em>const</em>  </span>arrayNumber<span> = </span>[ 45, 75, 200, 256, 1, 27 ]<span> ;</span></span></p>
+                <div id="result" class="container-result">
+                  RESULTADO
+                </div>
+              </div>
+              <div class="container-button">
+                <label for="">Obtener el número mayor del arreglo</label>
+                <button id="button-higher">MAYOR NÚMERO</button>
+                <br>
+                <label for="">Obtener el número menor del arreglo</label>
+                <button id="button-less">MENOR NÚMERO</button>
+                <br>
+                <label for="">Obtener el segundo número mayor del arreglo</label>
+                <button id="button-second-higher">SEGUNDO NÚMERO MAYOR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="reto-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ">
+            <h2>Reto 2: manipulando elementos de un Array de cadenas(Strings).</h2>
+            <br>
+            <div class="container-demo">
+              <div class="container-ejm">
+                <p>Dado el siguiente arreglo de nombres de varones:</p>
+                <p class="code-ejm"><span class="span1"><em>const</em>  </span>arrayString<span> = </span>[ 'erik', 'leonardo', 'andres', 'gerardo', 'jan', 'renzo' ]<span> ;</span></span></p>
+                <div id="result2" class="container-result">
+                  RESULTADO
+                </div>
+              </div>
+              <div class="container-button">
+                <label for="">Obtener la cadena más larga y la primera letra con inicial mayúscula </label>
+                <button id="button-capital-letter" type="reset">PALABRA MÁS LARGA</button>
+                <br>
+                <label for="">Obtener el orden del arreglo en forma ascendente </label>
+                <button id="button-ascending-order" type="reset">ORDEN ASCENDENTE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-
+  <!-- estructura del footer -->
   <footer>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <a href="#home">regresar</a>
+          <p>©auroraVásquezSánche2018</p>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <script src="js/retoapp.js"></script>
-  
+  <script src="js/reto1/app.js"></script>
+  <script src="js/reto2/app2.js"></script>
+
 </body>
 </html>
