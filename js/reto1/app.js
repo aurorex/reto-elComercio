@@ -34,8 +34,11 @@
       if (arrNumbers[i] > arrMaxNumber) {
         arrMaxNumber = arrNumbers[i];
       }
-      if (arrNumbers[i] !== arrMaxNumber && arrNumbers[i] > secondNumberHigher) {
-        secondNumberHigher = arrNumbers[i];
+    }
+
+    for (let j = 0;j < arrNumbers.length;j++) {
+      if (arrNumbers[j] !== arrMaxNumber && arrNumbers[j] > secondNumberHigher) {
+        secondNumberHigher = arrNumbers[j];
       }
     }
     resultElement.innerHTML = secondNumberHigher;
